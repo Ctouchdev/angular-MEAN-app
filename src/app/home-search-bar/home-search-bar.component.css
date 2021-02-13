@@ -1,0 +1,40 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-search-bar {
+  width: 50%;
+}
+
+form {
+  justify-content: center;
+}
+
+.mat-card {
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+
+.search-pad {
+  justify-content: center;
+  text-align: center;
+}
+
+.search-btn {
+  margin-right: 9px;
+}
+
+.mat-raised-button {
+  min-width: 30px;
+  padding: 0 7px 3px 8px;
+}
+
+.mat-icon {
+  color: white;
+}

@@ -1,0 +1,60 @@
+ngb-carousel .wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%; /* Keep ratio for 900x500 images */
+  border: none;
+  width: auto;
+  overflow: hidden;
+}
+
+ngb-carousel .wrapper>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 185px!important;
+  max-height: auto;
+  max-width: auto;
+  border: none;
+  border-color: white!important;
+  outline: none;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 275px;
+  max-height: 275px!important;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 225px!important;
+  outline: none;
+  padding: 0 35px;
+}
+
+
+.carousel-item {
+  height: 200px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.slide {
+  height: 200px;
+  width: auto;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+}
+
+.ng-star-inserted {
+  overflow: hidden;
+}

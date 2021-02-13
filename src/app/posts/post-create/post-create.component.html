@@ -1,0 +1,28 @@
+
+<div class="input-pad">
+
+  <form class="example-form">
+    <mat-card>
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input [(ngModel)]="userInput" matInput placeholder="Enter Post Title">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+      <button
+      mat-raised-button
+      color='primary'
+      (click)="onCreatePost()">Save Post</button>
+    </mat-card>
+  </form>
+
+  <p>{{ newPost }}</p>
+
+</div>
+
+
+
+

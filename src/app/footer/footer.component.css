@@ -1,0 +1,10 @@
+footer {
+  background-color: #FBD62A;
+  text-align: center;
+  position: relative;
+}
+
+.footer-logo {
+  height: 40px;
+  margin: 10px;
+}
