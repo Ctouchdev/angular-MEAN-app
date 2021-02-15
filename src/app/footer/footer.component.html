@@ -13,6 +13,14 @@
           <p></p>
           <img class="footer-logo" src='assets/img/the-generic-shop-color.png' alt="">
         </div>
+
+        <div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+          <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
+            <p>back to top</p>
+              <i class="fas fa-chevron-up" ></i>
+          </button>
+        </div>
+
       </footer>
   </div>
 

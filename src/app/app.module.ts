@@ -19,6 +19,7 @@ import { HomeSearchBar } from './home-search-bar/home-search-bar.component';
 import { HomeCarousel } from './home-carousel/home-carousel.component';
 import { HomeFeaturedItems } from './featured-items/home-featured-items.component';
 import { Footer } from './footer/footer.component';
+import { HomePopularCategories } from './home-popular-categories/home-popular-categories.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { Footer } from './footer/footer.component';
     HomeSearchBar,
     HomeCarousel,
     HomeFeaturedItems,
-    Footer
+    Footer,
+    HomePopularCategories
   ],
   imports: [
     BrowserModule,

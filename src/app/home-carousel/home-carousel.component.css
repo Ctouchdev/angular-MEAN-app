@@ -1,6 +1,6 @@
 ngb-carousel .wrapper {
   position: relative;
-  height: 0;
+  height: auto;
   padding-top: 55%; /* Keep ratio for 900x500 images */
   border: none;
   width: auto;
@@ -14,7 +14,7 @@ ngb-carousel .wrapper>img {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 185px!important;
+  height: auto;
   max-height: auto;
   max-width: auto;
   border: none;
@@ -24,37 +24,46 @@ ngb-carousel .wrapper>img {
 
 .carousel-inner {
   width: 100%;
-  height: 275px;
+  height: auto;
   max-height: 275px!important;
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
-.container-fluid {
-  width: 100%;
-  height: 225px!important;
-  outline: none;
-  padding: 0 35px;
-}
-
-
-.carousel-item {
-  height: 200px;
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
-.slide {
-  height: 200px;
-  width: auto;
   border: none;
   box-shadow: none;
   outline: none;
   margin: 0;
 }
 
+.container-fluid {
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 0;
+}
+
+
+.carousel-item {
+  height: auto;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.slide {
+  height: auto;
+  width: auto;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  max-height: 200px;
+}
+
 .ng-star-inserted {
-  overflow: hidden;
+  margin: 0!important;
+  height: auto!important;
+}
+
+.carousel-img {
+  background-image: contain;
+  height: auto;
+  width: auto;
 }

@@ -1,5 +1,5 @@
 .featured-items-pad {
-  padding: 0 100px;
+  padding: 0 50px;
   display: grid;
   text-align: center;
 }
@@ -21,14 +21,28 @@
 .mat-card {
   width: 200px;
   display: inline-block;
-  margin: 15px;
+  margin: 10px;
   background-color: #aa82fa09;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.068);
+  transition: .5s ease;
+}
+
+.mat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.149);
 }
 
 .featured-items-title {
   padding-top: 10px;
+  padding-bottom: 0!important;
   font-weight: 500;
   color: #663BBA;
+  font-size: 1.1rem;
+}
+
+.featured-items-content {
+  padding-top: 4px;
+  padding-bottom: 5px;
 }
 
 .featured-oi {
@@ -41,15 +55,16 @@ hr {
 }
 
 .h1-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #663BBA;
   font-family: 'Fira Sans', sans-serif;
 }
 
 .h1-pad {
-  padding: 0 105px;
-  height: 25px;
+  text-align: left;
+  height: 35px;
+  padding-left: 65px;
 }
 
 .mat-grid-list {

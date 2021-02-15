@@ -4,19 +4,36 @@
   </button> -->
   <img class="toolbar-logo" src='assets/img/the-generic-shop.png' alt="">
 
-  <div class="header-links-div">
+  <span class="header-spacer"></span>
 
-    <span [style.cursor]="'pointer'" routerLink="/produce" class="header-links">Produce</span>
-    <span [style.cursor]="'pointer'" routerLink="/clothing" class="header-links">Clothing</span>
-    <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">Electronics</span>
+  <div class="mat-toolbar">
+
+    <span [style.cursor]="'pointer'" routerLink="/produce" class="header-links">Shop</span>
+    <span [style.cursor]="'pointer'" routerLink="/clothing" class="header-links">Weekly Deals</span>
+    <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">What's New</span>
+    <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">Pickup & Delivery</span>
+    <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">Contact Us</span>
 
   </div>
 
   <span class="header-spacer"></span>
+
+  <div class="ship-to-pad">
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Account icon">
+      <mat-icon>expand_more</mat-icon>
+      <span [style.cursor]="'pointer'" routerLink="/produce" class="ship-to-text">Ship to</span>
+      <mat-icon>local_shipping</mat-icon>
+    </button>
+
+  </div>
+
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Account icon">
     <mat-icon>account_circle</mat-icon>
   </button>
+
   <button mat-icon-button class="example-icon" aria-label="Shopping cart icon">
     <mat-icon>shopping_cart</mat-icon>
   </button>
+
 </mat-toolbar>

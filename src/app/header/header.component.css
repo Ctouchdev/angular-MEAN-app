@@ -22,14 +22,25 @@
 }
 
 .header-links-div {
-  padding: 0 200px;
-  margin: 30px;
+  margin: 40px;
 }
 
 .header-links {
   flex: 1 1 auto;
-  margin: 70px;
+  margin: 40px;
   color: #FFF;
   font-weight: lighter;
   font-size: 1.05rem;
+}
+
+.ship-to-text {
+  color: #FFD740;
+  font-weight: 600;
+  font-size: .9rem;
+  padding-right: 10px;
+  letter-spacing: .07rem;
+}
+
+.ship-to-pad {
+  margin-right: 76px;
 }

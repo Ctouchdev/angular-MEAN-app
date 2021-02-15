@@ -8,6 +8,7 @@
 
 .home-search-bar {
   width: 50%;
+  padding-bottom: 15px;
 }
 
 form {
@@ -24,15 +25,17 @@ form {
 .search-pad {
   justify-content: center;
   text-align: center;
+  margin: 0 175px;
+  position: relative;
 }
 
 .search-btn {
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .mat-raised-button {
-  min-width: 30px;
-  padding: 0 7px 3px 8px;
+  min-width: 20px;
+  padding: 0 4px 0 6px;
 }
 
 .mat-icon {
