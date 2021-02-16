@@ -1,19 +1,9 @@
-
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-.example-full-width {
+mat-form-field,
+textarea {
   width: 100%;
 }
 
-
-
-.input-pad {
-  justify-content: center;
-  text-align: center;
+.create-post {
+  width: 50%;
+  margin: auto;
 }

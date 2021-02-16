@@ -10,10 +10,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { PostList } from './posts/post-list/post-list.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeSearchBar } from './home-search-bar/home-search-bar.component';
 import { HomeCarousel } from './home-carousel/home-carousel.component';
@@ -26,6 +30,7 @@ import { HomePopularCategories } from './home-popular-categories/home-popular-ca
   declarations: [
     AppComponent,
     PostCreateComponent,
+    PostList,
     HeaderComponent,
     HomeSearchBar,
     HomeCarousel,
@@ -44,7 +49,16 @@ import { HomePopularCategories } from './home-popular-categories/home-popular-ca
     MatIconModule,
     MatFormFieldModule,
     NgbModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: '', component: HomePopularCategories
+
+      }
+
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

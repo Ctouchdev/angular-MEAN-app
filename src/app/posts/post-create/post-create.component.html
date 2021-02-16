@@ -1,27 +1,35 @@
 
-<div class="input-pad">
-
-  <form class="example-form">
-    <mat-card>
-      <mat-form-field class="example-full-width">
-        <mat-label>Title</mat-label>
-        <input [(ngModel)]="userInput" matInput placeholder="Enter Post Title">
-      </mat-form-field>
-
-      <mat-form-field class="example-full-width">
-        <mat-label>Leave a comment</mat-label>
-        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-      </mat-form-field>
-      <button
+<mat-card class="create-post">
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="text"
+        name="title"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Post Title"
+        #title="ngModel">
+      <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea
+        matInput
+        rows="4"
+        name="content"
+        ngModel
+        required
+        placeholder="Post Content"
+        #content="ngModel"></textarea>
+      <mat-error *ngIf="content.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <button
       mat-raised-button
-      color='primary'
-      (click)="onCreatePost()">Save Post</button>
-    </mat-card>
+      color="accent"
+      type="submit">Save Post</button>
   </form>
-
-  <p>{{ newPost }}</p>
-
-</div>
+</mat-card>
 
 
 
