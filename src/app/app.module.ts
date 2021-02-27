@@ -12,7 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 
 import { AppComponent } from './app.component';
@@ -40,6 +40,7 @@ import { HomePopularCategories } from './home-popular-categories/home-popular-ca
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
@@ -51,14 +52,7 @@ import { HomePopularCategories } from './home-popular-categories/home-popular-ca
     NgbModule,
     MatGridListModule,
     MatExpansionModule,
-    HttpClientModule,
-    RouterModule.forRoot([
-      {
-        path: '', component: HomePopularCategories
-
-      }
-
-    ])
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

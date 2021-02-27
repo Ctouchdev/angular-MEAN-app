@@ -1,13 +1,15 @@
 
 <app-header></app-header>
-<app-home-carousel></app-home-carousel>
-<app-home-search-bar></app-home-search-bar>
-<app-home-featured-items></app-home-featured-items>
-<app-home-popular-categories></app-home-popular-categories>
-<main>
-  <app-post-create></app-post-create>
-  <app-post-list></app-post-list>
-</main>
+
+<router-outlet></router-outlet>
+<router-outlet name='postCreate'></router-outlet>
+<router-outlet name='postList'></router-outlet>
+<router-outlet name='carousel'></router-outlet>
+<router-outlet name='searchBar'></router-outlet>
+<router-outlet name='featuredItems'></router-outlet>
+<router-outlet name='popularCategories'></router-outlet>
+
+
 <app-footer></app-footer>
 
 

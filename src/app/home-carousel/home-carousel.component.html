@@ -1,35 +1,32 @@
-<div class="container-fluid">
-  <ngb-carousel>
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img src="/assets/img/fresh-produce.png" alt="Random first slide" class="carousel-img">
-      </div>
-    </ng-template>
 
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img src="/assets/img/gaming-essentials.png" alt="Random second slide" class="carousel-img">
-      </div>
-    </ng-template>
+<div id="carousel-header" class="carousel slide" data-ride="carousel" data-interval="3000">
 
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img src="/assets/img/athletic-equipment.png" alt="Random second slide" class="carousel-img">
-      </div>
-    </ng-template>
+  <div class="carousel-inner">
 
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img src="/assets/img/frozen-foods.png"  alt="Random third slide" class="carousel-img">
-      </div>
-    </ng-template>
+    <div class="carousel-item active">
+      <img class="carousel-image" src="/assets/img/fresh-produce.png" alt="dog-profile">
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-image" src="/assets/img/gaming-essentials.png" alt="lady-profile">
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-image" src="/assets/img/athletic-equipment.png" alt="lady-profile">
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-image" src="/assets/img/frozen-foods.png" alt="lady-profile">
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-image" src="/assets/img/womens-summerwear.png" alt="lady-profile">
+    </div>
 
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img src="/assets/img/womens-summerwear.png" alt="Random second slide" class="carousel-img">
-      </div>
-    </ng-template>
-
-
-  </ngb-carousel>
   </div>
+
+  <a class="carousel-control-prev" href="#carousel-header" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+
+  <a class="carousel-control-next" href="#carousel-header" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>

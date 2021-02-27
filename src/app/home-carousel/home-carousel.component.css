@@ -1,69 +1,8 @@
-ngb-carousel .wrapper {
-  position: relative;
-  height: auto;
-  padding-top: 55%; /* Keep ratio for 900x500 images */
-  border: none;
-  width: auto;
-  overflow: hidden;
-}
 
-ngb-carousel .wrapper>img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.carousel-image {
   width: 100%;
-  height: auto;
-  max-height: auto;
-  max-width: auto;
-  border: none;
-  border-color: white!important;
-  outline: none;
 }
-
-.carousel-inner {
-  width: 100%;
-  height: auto;
-  max-height: 275px!important;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  margin: 0;
-}
-
-.container-fluid {
-  width: 100%;
-  height: auto;
-  outline: none;
-  padding: 0;
-}
-
 
 .carousel-item {
-  height: auto;
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
-.slide {
-  height: auto;
-  width: auto;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  margin: 0;
-  max-height: 200px;
-}
-
-.ng-star-inserted {
-  margin: 0!important;
-  height: auto!important;
-}
-
-.carousel-img {
-  background-image: contain;
-  height: auto;
-  width: auto;
+  padding: 0;
 }
