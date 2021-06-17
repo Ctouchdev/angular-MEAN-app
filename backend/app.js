@@ -68,5 +68,9 @@ app.delete('/api/posts/:id', (req, res, next) => {
     });
 });
 
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Node app is running at localhost:" + app.get('port'));
+});
+
 
 module.exports = app;

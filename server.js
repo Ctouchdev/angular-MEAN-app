@@ -47,6 +47,10 @@ const onListening = () => {
 const port = normalizePort("3000" || process.ENV.PORT);
 app.set("port", port);
 
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Node app is running at localhost:" + app.get('port'));
+});
+
 const server = http.createServer(app);
 server.on("error", onError);
 server.on("listening", onListening);
