@@ -2,7 +2,9 @@ const http = require('http');
 const debug = require('debug')('node-angular');
 const app = require('./backend/app');
 
+const PORT = process.env.PORT || 3000;
 
-app.listen(process.env.PORT || 4200, function(){
-  console.log("Node app is running at localhost:" + app.get('port'));
+
+app.listen(PORT, () => {
+	console.log("Listening on http://localhost:" + PORT);
 });
