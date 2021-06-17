@@ -3,6 +3,8 @@ const debug = require('debug')('node-angular');
 const app = require('./backend/app');
 const express = require('express');
 
+const test = "test";
+
 //Install express server
 const path = require('path');
 
