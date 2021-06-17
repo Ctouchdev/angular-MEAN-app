@@ -2,14 +2,14 @@
   <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button> -->
-  <img class="toolbar-logo" src='assets/img/the-generic-shop.png' alt="">
+  <img class="toolbar-logo" src='assets/img/the-generic-shop.png' routerLink="" alt="" [style.cursor]="'pointer'">
 
   <span class="header-spacer"></span>
 
   <div class="mat-toolbar">
 
-    <span [style.cursor]="'pointer'" routerLink="/produce" class="header-links">Shop</span>
-    <span [style.cursor]="'pointer'" routerLink="/clothing" class="header-links">Weekly Deals</span>
+    <span [style.cursor]="'pointer'" routerLink="/shop" routerLinkActive="active" class="header-links">Shop</span>
+    <span [style.cursor]="'pointer'" routerLink="/test" class="header-links">Weekly Deals</span>
     <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">What's New</span>
     <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">Pickup & Delivery</span>
     <span [style.cursor]="'pointer'" routerLink="/electronics" class="header-links">Contact Us</span>

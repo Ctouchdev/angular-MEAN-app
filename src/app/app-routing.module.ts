@@ -11,8 +11,8 @@ import { HomePopularCategories } from './home-popular-categories/home-popular-ca
 
 const routes: Routes = [
 
-  { path: 'create', outlet: 'postCreate', component: PostCreateComponent, pathMatch: 'full' },
-  { path: 'create', outlet: 'postList', component: PostList, pathMatch: 'full' },
+  { path: 'shop', component: HomePopularCategories },
+  { path: 'test', component: HomeFeaturedItems },
   { path: '', outlet: 'carousel', component: HomeCarousel, pathMatch: 'full' },
   { path: '', outlet: 'searchBar', component: HomeSearchBar, pathMatch: 'full' },
   { path: '', outlet: 'featuredItems', component: HomeFeaturedItems, pathMatch: 'full' },
@@ -28,3 +28,5 @@ const routes: Routes = [
 export class AppRoutingModule {
 
 }
+
+

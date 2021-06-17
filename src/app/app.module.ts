@@ -13,6 +13,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -52,7 +53,8 @@ import { HomePopularCategories } from './home-popular-categories/home-popular-ca
     NgbModule,
     MatGridListModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
